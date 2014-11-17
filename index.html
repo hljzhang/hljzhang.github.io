@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://www.jetpunk.com/quizzes/name-the-elements.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Periodic Table Quiz</title>
+		<script type="text/javascript" async="" src="./Periodic Table Quiz_files/ga.js"></script><script async="" type="text/javascript" src="./Periodic Table Quiz_files/ca-pub-0994084661919749.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgMCUFdWGwEJVVNUAQg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+		<meta name="description" content="There are 114 named elements in the Periodic Table.  How many can you name?  Name the elements to fill in the table.">
+		
+		<meta property="og:image" content="http://www.jetpunk.com/img/fish-logo-only.png">
+		<meta property="og:description" content="On May 31, 2012 a new element was officially named, making 114 total. How many can you name? ">
+		<meta property="og:title" content="Periodic Table Quiz">
+		<meta property="og:url" content="http://www.jetpunk.com/quizzes/name-the-elements.php">
+
+		<script src="./Periodic Table Quiz_files/jquery.min.js"></script>
+<script src="./Periodic Table Quiz_files/common.js"></script>
+<link rel="stylesheet" href="http://www.jetpunk.com/css/default.css?v=107">
+<link rel="stylesheet" href="http://www.jetpunk.com/css/tquiz.css?v=011">
+<script type="text/javascript" src="./Periodic Table Quiz_files/tquiz.js"></script>
+		<style type="text/css">
+			body { background: url('/img/bodybg.gif') repeat-x; margin: 0; padding: 0; }
+			#overlay { width: 100%; min-height: 100%; position: fixed; top: 0; left: 0; z-index: 10; background: url('/img/overlay.png') repeat 0 0; display: none; }
+			#grid div.col { float: left; margin: 0 10px 0 0;  }
+#grid table { border-collapse: collapse; }
+#grid td { }
+#grid th { background-color: #3674B3; padding: 1px 5px; color: white;  }
+#grid td div { padding: 1px 5px; text-align: center; }
+#grid td div.a { background-color: #e2eaf2; }
+#grid td div.b { width: 95px; }
+
+#periodic { margin: 0 0 20px 0; }
+#periodic div.el { width: 35px; height: 35px; margin: 0 2px 2px 0; }
+.norm { background-color: #F2F2F2; color: #5E5E5E; }
+.pcorrect { background-color: #C2F2AA; color: #3A5E29; }
+.pincorrect{ background-color: #F2AAAA; color: #5E2929; }
+#periodic div.blank { background-color: #fff; }
+#periodic div.num { font-size: 9px; }
+#periodic div.sym { font-weight: bold; text-align: center; display: none; }
+#periodic td.spacer { height: 10px; background-color: #fff; }
+
+		</style>
+
+		<script type="text/javascript">	
+			_page = new Page();
+			_page.quizId = 27;
+_page.language = "english";
+_page.enableUser = true;
+_page.displayHot = true;
+	_page.readyNext = tQuizReady;
+	var q = new Quiz();
+	q.id = 27;q.seconds = 600;q.allowScrolling = true;
+q.answers = {
+0 : new Answer(0, ["Hydrogen","1"], ["^HYDROGEN$"]),
+1 : new Answer(1, ["Helium","2"], ["^HELIUM$"]),
+2 : new Answer(2, ["Lithium","3"], ["^LITHIUM$"]),
+3 : new Answer(3, ["Beryllium","4"], ["^BERYLL?IUM$"]),
+4 : new Answer(4, ["Boron","5"], ["^BORON$"]),
+5 : new Answer(5, ["Carbon","6"], ["^CARBON$"]),
+6 : new Answer(6, ["Nitrogen","7"], ["^NITROGEN$"]),
+7 : new Answer(7, ["Oxygen","8"], ["^OXYGEN$"]),
+8 : new Answer(8, ["Fluorine","9"], ["^FL[OU]+RINE$"]),
+9 : new Answer(9, ["Neon","10"], ["^NEON$"]),
+10 : new Answer(10, ["Sodium","11"], ["^SODIUM$"]),
+11 : new Answer(11, ["Magnesium","12"], ["^MAGNESIUM$"]),
+12 : new Answer(12, ["Aluminium","13"], ["^ALUMINI?UM$"]),
+13 : new Answer(13, ["Silicon","14"], ["^SILICON$"]),
+14 : new Answer(14, ["Phosphorus","15"], ["^PHOSPHORO?US$"]),
+15 : new Answer(15, ["Sulfur","16"], ["^SUL(F|PH)[EOU]R$"]),
+16 : new Answer(16, ["Chlorine","17"], ["^CHLORINE$"]),
+17 : new Answer(17, ["Argon","18"], ["^ARGON$"]),
+18 : new Answer(18, ["Potassium","19"], ["^(POTASS?IUM|KALL?IUM)$"]),
+19 : new Answer(19, ["Calcium","20"], ["^CALCIUM$"]),
+20 : new Answer(20, ["Scandium","21"], ["^SCANDIUM$"]),
+21 : new Answer(21, ["Titanium","22"], ["^TITANIUM$"]),
+22 : new Answer(22, ["Vanadium","23"], ["^VANADIUM$"]),
+23 : new Answer(23, ["Chromium","24"], ["^CHROMIUM$"]),
+24 : new Answer(24, ["Manganese","25"], ["^MANGANESE$"]),
+25 : new Answer(25, ["Iron","26"], ["^IRON$"]),
+26 : new Answer(26, ["Cobalt","27"], ["^COBALT$"]),
+27 : new Answer(27, ["Nickel","28"], ["^NICKEL$"]),
+28 : new Answer(28, ["Copper","29"], ["^COPPER$"]),
+29 : new Answer(29, ["Zinc","30"], ["^ZINC$"]),
+30 : new Answer(30, ["Gallium","31"], ["^GALLIUM$"]),
+31 : new Answer(31, ["Germanium","32"], ["^GERMANIUM$"]),
+32 : new Answer(32, ["Arsenic","33"], ["^ARSENIC$"]),
+33 : new Answer(33, ["Selenium","34"], ["^SELENIUM$"]),
+34 : new Answer(34, ["Bromine","35"], ["^BROMINE$"]),
+35 : new Answer(35, ["Krypton","36"], ["^KRYPTON$"]),
+36 : new Answer(36, ["Rubidium","37"], ["^RUBIDIUM$"]),
+37 : new Answer(37, ["Strontium","38"], ["^STRONTIUM$"]),
+38 : new Answer(38, ["Yttrium","39"], ["^YTT?RIUM$"]),
+39 : new Answer(39, ["Zirconium","40"], ["^ZIRCONIUM$"]),
+40 : new Answer(40, ["Niobium","41"], ["^NIOBIUM$"]),
+41 : new Answer(41, ["Molybdenum","42"], ["^MOLYBDENUM$"]),
+42 : new Answer(42, ["Technetium","43"], ["^TECHNETIUM$"]),
+43 : new Answer(43, ["Ruthenium","44"], ["^RUTHENIUM$"]),
+44 : new Answer(44, ["Rhodium","45"], ["^RHODIUM$"]),
+45 : new Answer(45, ["Palladium","46"], ["^PALLADIUM$"]),
+46 : new Answer(46, ["Silver","47"], ["^SILVER$"]),
+47 : new Answer(47, ["Cadmium","48"], ["^CADMIUM$"]),
+48 : new Answer(48, ["Indium","49"], ["^INDIUM$"]),
+49 : new Answer(49, ["Tin","50"], ["^TIN$"]),
+50 : new Answer(50, ["Antimony","51"], ["^ANTIMONY$"]),
+51 : new Answer(51, ["Tellurium","52"], ["^TELLURIUM$"]),
+52 : new Answer(52, ["Iodine","53"], ["^IODINE$"]),
+53 : new Answer(53, ["Xenon","54"], ["^XENON$"]),
+54 : new Answer(54, ["Cesium","55"], ["^CA?ESIUM$"]),
+55 : new Answer(55, ["Barium","56"], ["^BARIUM$"]),
+56 : new Answer(56, ["Lanthanum","57"], ["^LANTHANUM$"]),
+57 : new Answer(57, ["Cerium","58"], ["^CERIUM$"]),
+58 : new Answer(58, ["Praseodymium","59"], ["^PRASEODYMIUM$"]),
+59 : new Answer(59, ["Neodymium","60"], ["^NEODYMIUM$"]),
+60 : new Answer(60, ["Promethium","61"], ["^PROMETHIUM$"]),
+61 : new Answer(61, ["Samarium","62"], ["^SAMARIUM$"]),
+62 : new Answer(62, ["Europium","63"], ["^EUROPIUM$"]),
+63 : new Answer(63, ["Gadolinium","64"], ["^GADOLINIUM$"]),
+64 : new Answer(64, ["Terbium","65"], ["^TERBIUM$"]),
+65 : new Answer(65, ["Dysprosium","66"], ["^DYSPROSIUM$"]),
+66 : new Answer(66, ["Holmium","67"], ["^HOLMIUM$"]),
+67 : new Answer(67, ["Erbium","68"], ["^ERBIUM$"]),
+68 : new Answer(68, ["Thulium","69"], ["^THULIUM$"]),
+69 : new Answer(69, ["Ytterbium","70"], ["^YTTERBIUM$"]),
+70 : new Answer(70, ["Lutetium","71"], ["^LUTETIUM$"]),
+71 : new Answer(71, ["Hafnium","72"], ["^HAFNIUM$"]),
+72 : new Answer(72, ["Tantalum","73"], ["^TANTALUM$"]),
+73 : new Answer(73, ["Tungsten","74"], ["^(TUNGSTEN|WOLFRAM)$"]),
+74 : new Answer(74, ["Rhenium","75"], ["^RHENIUM$"]),
+75 : new Answer(75, ["Osmium","76"], ["^OSMIUM$"]),
+76 : new Answer(76, ["Iridium","77"], ["^IRIDIUM$"]),
+77 : new Answer(77, ["Platinum","78"], ["^PLATINUM$"]),
+78 : new Answer(78, ["Gold","79"], ["^GOLD$"]),
+79 : new Answer(79, ["Mercury","80"], ["^MERCURY$"]),
+80 : new Answer(80, ["Thallium","81"], ["^THALLIUM$"]),
+81 : new Answer(81, ["Lead","82"], ["^LEAD$"]),
+82 : new Answer(82, ["Bismuth","83"], ["^BISMUTH$"]),
+83 : new Answer(83, ["Polonium","84"], ["^POLONIUM$"]),
+84 : new Answer(84, ["Astatine","85"], ["^ASTATINE$"]),
+85 : new Answer(85, ["Radon","86"], ["^RADON$"]),
+86 : new Answer(86, ["Francium","87"], ["^FRANCIUM$"]),
+87 : new Answer(87, ["Radium","88"], ["^RADIUM$"]),
+88 : new Answer(88, ["Actinium","89"], ["^ACTINIUM$"]),
+89 : new Answer(89, ["Thorium","90"], ["^THORIUM$"]),
+90 : new Answer(90, ["Protactinium","91"], ["^PROTACTINIUM$"]),
+91 : new Answer(91, ["Uranium","92"], ["^URANIUM$"]),
+92 : new Answer(92, ["Neptunium","93"], ["^NEPTUNIUM$"]),
+93 : new Answer(93, ["Plutonium","94"], ["^PLUTONIUM$"]),
+94 : new Answer(94, ["Americium","95"], ["^AMERICIUM$"]),
+95 : new Answer(95, ["Curium","96"], ["^CURIUM$"]),
+96 : new Answer(96, ["Berkelium","97"], ["^BERKELIUM$"]),
+97 : new Answer(97, ["Californium","98"], ["^CALIFORNIUM$"]),
+98 : new Answer(98, ["Einsteinium","99"], ["^EINSTEINIUM$"]),
+99 : new Answer(99, ["Fermium","100"], ["^FERMIUM$"]),
+100 : new Answer(100, ["Mendelevium","101"], ["^MENDELEVIUM$"]),
+101 : new Answer(101, ["Nobelium","102"], ["^NOBELIUM$"]),
+102 : new Answer(102, ["Lawrencium","103"], ["^LAWRENCIUM$"]),
+103 : new Answer(103, ["Rutherfordium","104"], ["^RUTHERFORDIUM$"]),
+104 : new Answer(104, ["Dubnium","105"], ["^DUBNIUM$"]),
+105 : new Answer(105, ["Seaborgium","106"], ["^SEABORGIUM$"]),
+106 : new Answer(106, ["Bohrium","107"], ["^BOHRIUM$"]),
+107 : new Answer(107, ["Hassium","108"], ["^HASSIUM$"]),
+108 : new Answer(108, ["Meitnerium","109"], ["^M[EI]+TNERIUM$"]),
+109 : new Answer(109, ["Darmstadtium","110"], ["^DARMSTAD?TIUM$"]),
+110 : new Answer(110, ["Roentgenium","111"], ["^R[EO]+NTGENIUM$"]),
+111 : new Answer(111, ["Copernicium","112"], ["^COPERN[AEI]CIUM"]),
+112 : new Answer(112, ["Flerovium","114"], ["^FL[AEIO]ROVI[EU]M"]),
+113 : new Answer(113, ["Livermorium","116"], ["^LIVERMORI[EU]M"])
+};
+
+statsW.headers = ["Element","#"];
+statsW.template = [0,1];
+
+var Cell27 = function(id, pId, answerId)
+{
+	Cell.apply(this, [id, answerId, 0] );  
+	this.pId = pId;
+};
+Cell27.prototype = Object.create(Cell.prototype);  
+Cell27.prototype.draw = function()
+{
+	this.standardDraw();
+
+	var x = "#" + this.pId;
+	$(x + " .sym").show();
+	$(x).removeClass("norm");
+	if ( this.answer.answered ) {
+		$(x).addClass("pcorrect");
+	}
+	else {
+		$(x).addClass("pincorrect");
+	}
+};
+
+
+q.cells = [
+	new Cell27("c1","p1",0),
+	new Cell27("c2","p2",1),
+	new Cell27("c3","p3",2),
+	new Cell27("c4","p4",3),
+	new Cell27("c5","p5",4),
+	new Cell27("c6","p6",5),
+	new Cell27("c7","p7",6),
+	new Cell27("c8","p8",7),
+	new Cell27("c9","p9",8),
+	new Cell27("c10","p10",9),
+	new Cell27("c11","p11",10),
+	new Cell27("c12","p12",11),
+	new Cell27("c13","p13",12),
+	new Cell27("c14","p14",13),
+	new Cell27("c15","p15",14),
+	new Cell27("c16","p16",15),
+	new Cell27("c17","p17",16),
+	new Cell27("c18","p18",17),
+	new Cell27("c19","p19",18),
+	new Cell27("c20","p20",19),
+	new Cell27("c21","p21",20),
+	new Cell27("c22","p22",21),
+	new Cell27("c23","p23",22),
+	new Cell27("c24","p24",23),
+	new Cell27("c25","p25",24),
+	new Cell27("c26","p26",25),
+	new Cell27("c27","p27",26),
+	new Cell27("c28","p28",27),
+	new Cell27("c29","p29",28),
+	new Cell27("c30","p30",29),
+	new Cell27("c31","p31",30),
+	new Cell27("c32","p32",31),
+	new Cell27("c33","p33",32),
+	new Cell27("c34","p34",33),
+	new Cell27("c35","p35",34),
+	new Cell27("c36","p36",35),
+	new Cell27("c37","p37",36),
+	new Cell27("c38","p38",37),
+	new Cell27("c39","p39",38),
+	new Cell27("c40","p40",39),
+	new Cell27("c41","p41",40),
+	new Cell27("c42","p42",41),
+	new Cell27("c43","p43",42),
+	new Cell27("c44","p44",43),
+	new Cell27("c45","p45",44),
+	new Cell27("c46","p46",45),
+	new Cell27("c47","p47",46),
+	new Cell27("c48","p48",47),
+	new Cell27("c49","p49",48),
+	new Cell27("c50","p50",49),
+	new Cell27("c51","p51",50),
+	new Cell27("c52","p52",51),
+	new Cell27("c53","p53",52),
+	new Cell27("c54","p54",53),
+	new Cell27("c55","p55",54),
+	new Cell27("c56","p56",55),
+	new Cell27("c57","p57",56),
+	new Cell27("c58","p58",57),
+	new Cell27("c59","p59",58),
+	new Cell27("c60","p60",59),
+	new Cell27("c61","p61",60),
+	new Cell27("c62","p62",61),
+	new Cell27("c63","p63",62),
+	new Cell27("c64","p64",63),
+	new Cell27("c65","p65",64),
+	new Cell27("c66","p66",65),
+	new Cell27("c67","p67",66),
+	new Cell27("c68","p68",67),
+	new Cell27("c69","p69",68),
+	new Cell27("c70","p70",69),
+	new Cell27("c71","p71",70),
+	new Cell27("c72","p72",71),
+	new Cell27("c73","p73",72),
+	new Cell27("c74","p74",73),
+	new Cell27("c75","p75",74),
+	new Cell27("c76","p76",75),
+	new Cell27("c77","p77",76),
+	new Cell27("c78","p78",77),
+	new Cell27("c79","p79",78),
+	new Cell27("c80","p80",79),
+	new Cell27("c81","p81",80),
+	new Cell27("c82","p82",81),
+	new Cell27("c83","p83",82),
+	new Cell27("c84","p84",83),
+	new Cell27("c85","p85",84),
+	new Cell27("c86","p86",85),
+	new Cell27("c87","p87",86),
+	new Cell27("c88","p88",87),
+	new Cell27("c89","p89",88),
+	new Cell27("c90","p90",89),
+	new Cell27("c91","p91",90),
+	new Cell27("c92","p92",91),
+	new Cell27("c93","p93",92),
+	new Cell27("c94","p94",93),
+	new Cell27("c95","p95",94),
+	new Cell27("c96","p96",95),
+	new Cell27("c97","p97",96),
+	new Cell27("c98","p98",97),
+	new Cell27("c99","p99",98),
+	new Cell27("c100","p100",99),
+	new Cell27("c101","p101",100),
+	new Cell27("c102","p102",101),
+	new Cell27("c103","p103",102),
+	new Cell27("c104","p104",103),
+	new Cell27("c105","p105",104),
+	new Cell27("c106","p106",105),
+	new Cell27("c107","p107",106),
+	new Cell27("c108","p108",107),
+	new Cell27("c109","p109",108),
+	new Cell27("c110","p110",109),
+	new Cell27("c111","p111",110),
+	new Cell27("c112","p112",111),
+	new Cell27("c114","p114",112),
+	new Cell27("c116","p116",113)];
+
+
+statsW.headers = ["#", "Element"];
+statsW.template = [1,0];
+		</script>
+
+    </head>
+    <body onkeydown="q.bodyKeyDown(event)">
+        <div id="content">
+			<div id="top">
+				<div id="tcol1">
+					<div class="fish"><a href="http://www.jetpunk.com/"><img src="./Periodic Table Quiz_files/fish.gif" alt="fish"></a></div>
+					<div class="logo"><a href="http://www.jetpunk.com/"><img src="./Periodic Table Quiz_files/logo.gif" alt="logo"></a></div>
+					<div class="f1">
+						<div id="reddit-link">JetPunk <a href="http://www.reddit.com/r/JetPunk/">subreddit</a></div>
+					</div>
+				</div>
+								
+				<div class="menu">
+					<ul>				
+						<li><a href="http://www.jetpunk.com/tags/all">All Quizzes</a></li>
+						<li><a href="http://www.jetpunk.com/quizzes/random.php">Random Quiz</a></li>
+						<li id="stopTimer"><a href="javascript:void(0)">Stop Timer</a></li>						<li id="createQuiz"><a href="javascript:void(0)">Create Quiz</a></li>
+						<li id="menuOut" style="display: list-item;"><a href="javascript:void(0)">Login / Create Account</a></li>
+						<li id="menuIn" style="display: none;">
+							<a href="javascript:void(0)"><span id="screenName"></span></a>
+							<ul>
+		        				<li><a href="http://www.jetpunk.com/user/profile.php">Profile</a></li>
+		        				<li><a href="http://www.jetpunk.com/user/stats.php">Stats</a></li>
+		        				<li id="notifications"></li>
+		        				<li id="yourQuizzes"></li>
+		        				<li id="logout"><a href="javascript:void(0)">Logout</a></li>		
+		    				</ul>
+						</li>										
+					</ul>
+				</div>
+
+				<div id="divSearch">
+					<input type="text" value="Search" id="txtSearch">
+					<div id="searchResults"></div>
+					<div id="searchResultsLoading"><img src="./Periodic Table Quiz_files/ajax-loader3.gif"></div>
+				</div>
+									<div id="divRating1">
+						Rate this quiz:
+					</div>
+					<div id="divRating2">
+						<div class="star" id="star1"><div class="a"><img src="./Periodic Table Quiz_files/star-unfilled.gif"></div><div class="b" style="display: none;"><img src="./Periodic Table Quiz_files/star-filled.gif"></div></div>
+						<div class="star" id="star2"><div class="a"><img src="./Periodic Table Quiz_files/star-unfilled.gif"></div><div class="b" style="display: none;"><img src="./Periodic Table Quiz_files/star-filled.gif"></div></div>
+						<div class="star" id="star3"><div class="a"><img src="./Periodic Table Quiz_files/star-unfilled.gif"></div><div class="b" style="display: none;"><img src="./Periodic Table Quiz_files/star-filled.gif"></div></div>
+						<div class="star" id="star4"><div class="a"><img src="./Periodic Table Quiz_files/star-unfilled.gif"></div><div class="b" style="display: none;"><img src="./Periodic Table Quiz_files/star-filled.gif"></div></div>
+						<div class="star" id="star5"><div class="a"><img src="./Periodic Table Quiz_files/star-unfilled.gif"></div><div class="b" style="display: none;"><img src="./Periodic Table Quiz_files/star-filled.gif"></div></div>				
+					</div>
+					<div id="divRating3">
+						loading ...
+					</div>
+							</div>
+			<div id="main">
+
+				<!-- <div style="background-color: #ffff99; padding: 5px; width: 500px; text-align: center; margin: 0 0 10px 0;">
+				JetPunk will be down at 1:45 Eastern Time for about 15 minutes
+				</div> -->
+
+				<noscript>
+					&lt;div id="noJs"&gt;Javascript should be enabled for this site to work correctly.&lt;/div&gt;
+				</noscript>
+
+				<div id="lowIe"></div>
+				
+				<div id="col1"><script type="text/javascript">if ( typeof(q) !== 'undefined' ) { var _qBackup = q; }</script>
+<div id="adLeader">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-0994084661919749";
+	/* 728x90, created 2/7/11 */
+	google_ad_slot = "0298548593";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript" src="./Periodic Table Quiz_files/show_ads.js">
+	</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+</div>
+<script type="text/javascript">if ( typeof(_qBackup) !== 'undefined' ) { var q = _qBackup; } </script>
+		<div id="autoplay">
+		Take another quiz &gt; <div id="autoplayLink"></div> <div id="autoplayRight"><a href="http://www.jetpunk.com/user/recommendations.php?quiz=27">More Suggestions</a> | <a href="http://www.jetpunk.com/user/stats.php">Your Stats</a></div>
+	</div>
+		<div id="row2">
+		<table cellpadding="0" cellspacing="0">
+			<tbody><tr>
+							<td valign="top">
+					<div id="thumbContainer"><img alt="thumb" src="./Periodic Table Quiz_files/27.png"></div>
+					<div id="thumbAttrib">image credit</div>				</td>
+						<td valign="top">
+				<div id="rightOfThumb">
+					<h1>Periodic Table Quiz</h1>
+					<div id="instructions">
+						On May 31, 2012 a new element was officially named, making 114 total. How many can you name? 					</div>
+					<div id="controls">
+						<table cellpadding="0" cellspacing="0">
+							<tbody><tr>
+							<td valign="top">
+								<div id="timerOuter">
+									<div id="timer">9:51</div>
+									<div id="giveUp"><a href="javascript:void(0)" onclick="q.finish()">Give Up?</a></div>
+								</div>
+							</td>
+							<td valign="top">
+								<div id="controlsRight">
+									<div id="enter">
+										Enter element's name here:										<span class="helpLink"><a href="javascript:void(0)" onclick="displayHelp()">?</a></span>
+									</div>
+									<div style="clear:both;">
+										<input id="txtUser" type="text" onkeyup="typing(event)" autocomplete="off">
+									</div>
+									<div style="clear:both;">
+										<div id="numGuessed">0/114 guessed</div>
+										<div id="alreadyGuessed"></div>
+									</div>
+								</div>
+							</td>
+							</tr>
+						</tbody></table>	
+					</div>
+				</div>
+			</td>
+			</tr>
+		</tbody></table>	
+	</div> <!-- end row2 -->
+
+			<div id="statBox1">
+			<div class="h">Scoring</div>
+			<div id="statLine1"></div>
+			<div id="statLine2"></div>
+			<div id="statLine3"></div>
+			<div id="statLine4"></div>
+			<div id="moreStats"><a href="http://www.jetpunk.com/quizzes/name-the-elements.php/stats" target="blank">more stats &gt;&gt;</a></div>	
+		</div>
+			<div id="likeBox">
+		</div>
+	<div style="clear:both"></div>		<div id="postGameControls">
+			<b>Keep scrolling down for answers and more stats...</b>
+			<div class="a"><input type="button" value="Take Quiz Again" id="btnRetake"></div>
+		</div>
+	
+	<div style="clear: both;"></div>
+
+	<div id="scrollSpacer" style="height: 140px; display: none;"></div>
+
+	<div id="quiz"><div id="periodic">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td><div class="el norm" id="p1"><div class="num">1</div><div class="sym">H</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p2"><div class="num">2</div><div class="sym">He</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p3"><div class="num">3</div><div class="sym">Li</div></div></td>
+			<td><div class="el norm" id="p4"><div class="num">4</div><div class="sym">Be</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p5"><div class="num">5</div><div class="sym">B</div></div></td>
+			<td><div class="el norm" id="p6"><div class="num">6</div><div class="sym">C</div></div></td>
+			<td><div class="el norm" id="p7"><div class="num">7</div><div class="sym">N</div></div></td>
+			<td><div class="el norm" id="p8"><div class="num">8</div><div class="sym">O</div></div></td>
+			<td><div class="el norm" id="p9"><div class="num">9</div><div class="sym">F</div></div></td>
+			<td><div class="el norm" id="p10"><div class="num">10</div><div class="sym">Ne</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p11"><div class="num">11</div><div class="sym">Na</div></div></td>
+			<td><div class="el norm" id="p12"><div class="num">12</div><div class="sym">Mg</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p13"><div class="num">13</div><div class="sym">Al</div></div></td>
+			<td><div class="el norm" id="p14"><div class="num">14</div><div class="sym">Si</div></div></td>
+			<td><div class="el norm" id="p15"><div class="num">15</div><div class="sym">P</div></div></td>
+			<td><div class="el norm" id="p16"><div class="num">16</div><div class="sym">S</div></div></td>
+			<td><div class="el norm" id="p17"><div class="num">17</div><div class="sym">Cl</div></div></td>
+			<td><div class="el norm" id="p18"><div class="num">18</div><div class="sym">Ar</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p19"><div class="num">19</div><div class="sym">K</div></div></td>
+			<td><div class="el norm" id="p20"><div class="num">20</div><div class="sym">Ca</div></div></td>
+			<td><div class="el norm" id="p21"><div class="num">21</div><div class="sym">Sc</div></div></td>
+			<td><div class="el norm" id="p22"><div class="num">22</div><div class="sym">Ti</div></div></td>
+			<td><div class="el norm" id="p23"><div class="num">23</div><div class="sym">V</div></div></td>
+			<td><div class="el norm" id="p24"><div class="num">24</div><div class="sym">Cr</div></div></td>
+			<td><div class="el norm" id="p25"><div class="num">25</div><div class="sym">Mn</div></div></td>
+			<td><div class="el norm" id="p26"><div class="num">26</div><div class="sym">Fe</div></div></td>
+			<td><div class="el norm" id="p27"><div class="num">27</div><div class="sym">Co</div></div></td>
+			<td><div class="el norm" id="p28"><div class="num">28</div><div class="sym">Ni</div></div></td>
+			<td><div class="el norm" id="p29"><div class="num">29</div><div class="sym">Cu</div></div></td>
+			<td><div class="el norm" id="p30"><div class="num">30</div><div class="sym">Zn</div></div></td>
+			<td><div class="el norm" id="p31"><div class="num">31</div><div class="sym">Ga</div></div></td>
+			<td><div class="el norm" id="p32"><div class="num">32</div><div class="sym">Ge</div></div></td>
+			<td><div class="el norm" id="p33"><div class="num">33</div><div class="sym">As</div></div></td>
+			<td><div class="el norm" id="p34"><div class="num">34</div><div class="sym">Se</div></div></td>
+			<td><div class="el norm" id="p35"><div class="num">35</div><div class="sym">Br</div></div></td>
+			<td><div class="el norm" id="p36"><div class="num">36</div><div class="sym">Kr</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p37"><div class="num">37</div><div class="sym">Rb</div></div></td>
+			<td><div class="el norm" id="p38"><div class="num">38</div><div class="sym">Sr</div></div></td>
+			<td><div class="el norm" id="p39"><div class="num">39</div><div class="sym">Y</div></div></td>
+			<td><div class="el norm" id="p40"><div class="num">40</div><div class="sym">Zr</div></div></td>
+			<td><div class="el norm" id="p41"><div class="num">41</div><div class="sym">Nb</div></div></td>
+			<td><div class="el norm" id="p42"><div class="num">42</div><div class="sym">Mo</div></div></td>
+			<td><div class="el norm" id="p43"><div class="num">43</div><div class="sym">Tc</div></div></td>
+			<td><div class="el norm" id="p44"><div class="num">44</div><div class="sym">Ru</div></div></td>
+			<td><div class="el norm" id="p45"><div class="num">45</div><div class="sym">Rh</div></div></td>
+			<td><div class="el norm" id="p46"><div class="num">46</div><div class="sym">Pd</div></div></td>
+			<td><div class="el norm" id="p47"><div class="num">47</div><div class="sym">Ag</div></div></td>
+			<td><div class="el norm" id="p48"><div class="num">48</div><div class="sym">Cd</div></div></td>
+			<td><div class="el norm" id="p49"><div class="num">49</div><div class="sym">In</div></div></td>
+			<td><div class="el norm" id="p50"><div class="num">50</div><div class="sym">Sn</div></div></td>
+			<td><div class="el norm" id="p51"><div class="num">51</div><div class="sym">Sb</div></div></td>
+			<td><div class="el norm" id="p52"><div class="num">52</div><div class="sym">Te</div></div></td>
+			<td><div class="el norm" id="p53"><div class="num">53</div><div class="sym">I</div></div></td>
+			<td><div class="el norm" id="p54"><div class="num">54</div><div class="sym">Xe</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p55"><div class="num">55</div><div class="sym">Cs</div></div></td>
+			<td><div class="el norm" id="p56"><div class="num">56</div><div class="sym">Ba</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p72"><div class="num">72</div><div class="sym">Hf</div></div></td>
+			<td><div class="el norm" id="p73"><div class="num">73</div><div class="sym">Ta</div></div></td>
+			<td><div class="el norm" id="p74"><div class="num">74</div><div class="sym">W</div></div></td>
+			<td><div class="el norm" id="p75"><div class="num">75</div><div class="sym">Re</div></div></td>
+			<td><div class="el norm" id="p76"><div class="num">76</div><div class="sym">Os</div></div></td>
+			<td><div class="el norm" id="p77"><div class="num">77</div><div class="sym">Ir</div></div></td>
+			<td><div class="el norm" id="p78"><div class="num">78</div><div class="sym">Pt</div></div></td>
+			<td><div class="el norm" id="p79"><div class="num">79</div><div class="sym">Au</div></div></td>
+			<td><div class="el norm" id="p80"><div class="num">80</div><div class="sym">Hg</div></div></td>
+			<td><div class="el norm" id="p81"><div class="num">81</div><div class="sym">Tl</div></div></td>
+			<td><div class="el norm" id="p82"><div class="num">82</div><div class="sym">Pb</div></div></td>
+			<td><div class="el norm" id="p83"><div class="num">83</div><div class="sym">Bl</div></div></td>
+			<td><div class="el norm" id="p84"><div class="num">84</div><div class="sym">Po</div></div></td>
+			<td><div class="el norm" id="p85"><div class="num">85</div><div class="sym">At</div></div></td>
+			<td><div class="el norm" id="p86"><div class="num">86</div><div class="sym">Rn</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el norm" id="p87"><div class="num">87</div><div class="sym">Fr</div></div></td>
+			<td><div class="el norm" id="p88"><div class="num">88</div><div class="sym">Ra</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p104"><div class="num">104</div><div class="sym">Rf</div></div></td>
+			<td><div class="el norm" id="p105"><div class="num">105</div><div class="sym">Db</div></div></td>
+			<td><div class="el norm" id="p106"><div class="num">106</div><div class="sym">Sg</div></div></td>
+			<td><div class="el norm" id="p107"><div class="num">107</div><div class="sym">Bh</div></div></td>
+			<td><div class="el norm" id="p108"><div class="num">108</div><div class="sym">Hs</div></div></td>
+			<td><div class="el norm" id="p109"><div class="num">109</div><div class="sym">Mt</div></div></td>
+			<td><div class="el norm" id="p110"><div class="num">110</div><div class="sym">Ds</div></div></td>
+			<td><div class="el norm" id="p111"><div class="num">111</div><div class="sym">Rg</div></div></td>
+			<td><div class="el norm" id="p112"><div class="num">112</div><div class="sym">Cn</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p114"><div class="num">114</div><div class="sym">Fl</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p116"><div class="num">116</div><div class="sym">Lv</div></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+		</tr>
+		<tr>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+			<td class="spacer"></td>
+		</tr>
+		<tr>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p57"><div class="num">57</div><div class="sym">La</div></div></td>
+			<td><div class="el norm" id="p58"><div class="num">58</div><div class="sym">Ce</div></div></td>
+			<td><div class="el norm" id="p59"><div class="num">59</div><div class="sym">Pr</div></div></td>
+			<td><div class="el norm" id="p60"><div class="num">60</div><div class="sym">Nd</div></div></td>
+			<td><div class="el norm" id="p61"><div class="num">61</div><div class="sym">Pm</div></div></td>
+			<td><div class="el norm" id="p62"><div class="num">62</div><div class="sym">Sm</div></div></td>
+			<td><div class="el norm" id="p63"><div class="num">63</div><div class="sym">Eu</div></div></td>
+			<td><div class="el norm" id="p64"><div class="num">64</div><div class="sym">Gd</div></div></td>
+			<td><div class="el norm" id="p65"><div class="num">65</div><div class="sym">Tb</div></div></td>
+			<td><div class="el norm" id="p66"><div class="num">66</div><div class="sym">Dy</div></div></td>
+			<td><div class="el norm" id="p67"><div class="num">67</div><div class="sym">Ho</div></div></td>
+			<td><div class="el norm" id="p68"><div class="num">68</div><div class="sym">Er</div></div></td>
+			<td><div class="el norm" id="p69"><div class="num">69</div><div class="sym">Tm</div></div></td>
+			<td><div class="el norm" id="p70"><div class="num">70</div><div class="sym">Yb</div></div></td>
+			<td><div class="el norm" id="p71"><div class="num">71</div><div class="sym">Lu</div></div></td>
+		</tr>
+		<tr>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el blank"></div></td>
+			<td><div class="el norm" id="p89"><div class="num">89</div><div class="sym">Ac</div></div></td>
+			<td><div class="el norm" id="p90"><div class="num">90</div><div class="sym">Th</div></div></td>
+			<td><div class="el norm" id="p91"><div class="num">91</div><div class="sym">Pa</div></div></td>
+			<td><div class="el norm" id="p92"><div class="num">92</div><div class="sym">U</div></div></td>
+			<td><div class="el norm" id="p93"><div class="num">93</div><div class="sym">Np</div></div></td>
+			<td><div class="el norm" id="p94"><div class="num">94</div><div class="sym">Pu</div></div></td>
+			<td><div class="el norm" id="p95"><div class="num">95</div><div class="sym">Am</div></div></td>
+			<td><div class="el norm" id="p96"><div class="num">96</div><div class="sym">Cm</div></div></td>
+			<td><div class="el norm" id="p97"><div class="num">97</div><div class="sym">Bk</div></div></td>
+			<td><div class="el norm" id="p98"><div class="num">98</div><div class="sym">Cf</div></div></td>
+			<td><div class="el norm" id="p99"><div class="num">99</div><div class="sym">Es</div></div></td>
+			<td><div class="el norm" id="p100"><div class="num">100</div><div class="sym">Fm</div></div></td>
+			<td><div class="el norm" id="p101"><div class="num">101</div><div class="sym">Md</div></div></td>
+			<td><div class="el norm" id="p102"><div class="num">102</div><div class="sym">No</div></div></td>
+			<td><div class="el norm" id="p103"><div class="num">103</div><div class="sym">Lr</div></div></td>
+		</tr>
+	</tbody></table>
+</div>
+
+<div id="grid">
+	<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr><th>#</th><th>Element</th></tr>
+		<tr><td><div class="a">1</div></td><td><div id="c1" class="b"></div></td></tr>
+		<tr><td><div class="a">2</div></td><td><div id="c2" class="b"></div></td></tr>
+		<tr><td><div class="a">3</div></td><td><div id="c3" class="b"></div></td></tr>
+		<tr><td><div class="a">4</div></td><td><div id="c4" class="b"></div></td></tr>
+		<tr><td><div class="a">5</div></td><td><div id="c5" class="b"></div></td></tr>
+		<tr><td><div class="a">6</div></td><td><div id="c6" class="b"></div></td></tr>
+		<tr><td><div class="a">7</div></td><td><div id="c7" class="b"></div></td></tr>
+		<tr><td><div class="a">8</div></td><td><div id="c8" class="b"></div></td></tr>
+		<tr><td><div class="a">9</div></td><td><div id="c9" class="b"></div></td></tr>
+		<tr><td><div class="a">10</div></td><td><div id="c10" class="b"></div></td></tr>
+		<tr><td><div class="a">11</div></td><td><div id="c11" class="b"></div></td></tr>
+		<tr><td><div class="a">12</div></td><td><div id="c12" class="b"></div></td></tr>
+		<tr><td><div class="a">13</div></td><td><div id="c13" class="b"></div></td></tr>
+		<tr><td><div class="a">14</div></td><td><div id="c14" class="b"></div></td></tr>
+		<tr><td><div class="a">15</div></td><td><div id="c15" class="b"></div></td></tr>
+		<tr><td><div class="a">16</div></td><td><div id="c16" class="b"></div></td></tr>
+		<tr><td><div class="a">17</div></td><td><div id="c17" class="b"></div></td></tr>
+		<tr><td><div class="a">18</div></td><td><div id="c18" class="b"></div></td></tr>
+		<tr><td><div class="a">19</div></td><td><div id="c19" class="b"></div></td></tr>
+		<tr><td><div class="a">20</div></td><td><div id="c20" class="b"></div></td></tr>
+		<tr><td><div class="a">21</div></td><td><div id="c21" class="b"></div></td></tr>
+		<tr><td><div class="a">22</div></td><td><div id="c22" class="b"></div></td></tr>
+		<tr><td><div class="a">23</div></td><td><div id="c23" class="b"></div></td></tr>
+	</tbody></table>
+	</div>
+
+	<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr><th>#</th><th>Element</th></tr>
+		<tr><td><div class="a">24</div></td><td><div id="c24" class="b"></div></td></tr>
+		<tr><td><div class="a">25</div></td><td><div id="c25" class="b"></div></td></tr>
+		<tr><td><div class="a">26</div></td><td><div id="c26" class="b"></div></td></tr>
+		<tr><td><div class="a">27</div></td><td><div id="c27" class="b"></div></td></tr>
+		<tr><td><div class="a">28</div></td><td><div id="c28" class="b"></div></td></tr>
+		<tr><td><div class="a">29</div></td><td><div id="c29" class="b"></div></td></tr>
+		<tr><td><div class="a">30</div></td><td><div id="c30" class="b"></div></td></tr>
+		<tr><td><div class="a">31</div></td><td><div id="c31" class="b"></div></td></tr>
+		<tr><td><div class="a">32</div></td><td><div id="c32" class="b"></div></td></tr>
+		<tr><td><div class="a">33</div></td><td><div id="c33" class="b"></div></td></tr>
+		<tr><td><div class="a">34</div></td><td><div id="c34" class="b"></div></td></tr>
+		<tr><td><div class="a">35</div></td><td><div id="c35" class="b"></div></td></tr>
+		<tr><td><div class="a">36</div></td><td><div id="c36" class="b"></div></td></tr>
+		<tr><td><div class="a">37</div></td><td><div id="c37" class="b"></div></td></tr>
+		<tr><td><div class="a">38</div></td><td><div id="c38" class="b"></div></td></tr>
+		<tr><td><div class="a">39</div></td><td><div id="c39" class="b"></div></td></tr>
+		<tr><td><div class="a">40</div></td><td><div id="c40" class="b"></div></td></tr>
+		<tr><td><div class="a">41</div></td><td><div id="c41" class="b"></div></td></tr>
+		<tr><td><div class="a">42</div></td><td><div id="c42" class="b"></div></td></tr>
+		<tr><td><div class="a">43</div></td><td><div id="c43" class="b"></div></td></tr>
+		<tr><td><div class="a">44</div></td><td><div id="c44" class="b"></div></td></tr>
+		<tr><td><div class="a">45</div></td><td><div id="c45" class="b"></div></td></tr>
+		<tr><td><div class="a">46</div></td><td><div id="c46" class="b"></div></td></tr>
+	</tbody></table>
+	</div>
+
+	<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr><th>#</th><th>Element</th></tr>
+		<tr><td><div class="a">47</div></td><td><div id="c47" class="b"></div></td></tr>
+		<tr><td><div class="a">48</div></td><td><div id="c48" class="b"></div></td></tr>
+		<tr><td><div class="a">49</div></td><td><div id="c49" class="b"></div></td></tr>
+		<tr><td><div class="a">50</div></td><td><div id="c50" class="b"></div></td></tr>
+		<tr><td><div class="a">51</div></td><td><div id="c51" class="b"></div></td></tr>
+		<tr><td><div class="a">52</div></td><td><div id="c52" class="b"></div></td></tr>
+		<tr><td><div class="a">53</div></td><td><div id="c53" class="b"></div></td></tr>
+		<tr><td><div class="a">54</div></td><td><div id="c54" class="b"></div></td></tr>
+		<tr><td><div class="a">55</div></td><td><div id="c55" class="b"></div></td></tr>
+		<tr><td><div class="a">56</div></td><td><div id="c56" class="b"></div></td></tr>
+		<tr><td><div class="a">57</div></td><td><div id="c57" class="b"></div></td></tr>
+		<tr><td><div class="a">58</div></td><td><div id="c58" class="b"></div></td></tr>
+		<tr><td><div class="a">59</div></td><td><div id="c59" class="b"></div></td></tr>
+		<tr><td><div class="a">60</div></td><td><div id="c60" class="b"></div></td></tr>
+		<tr><td><div class="a">61</div></td><td><div id="c61" class="b"></div></td></tr>
+		<tr><td><div class="a">62</div></td><td><div id="c62" class="b"></div></td></tr>
+		<tr><td><div class="a">63</div></td><td><div id="c63" class="b"></div></td></tr>
+		<tr><td><div class="a">64</div></td><td><div id="c64" class="b"></div></td></tr>
+		<tr><td><div class="a">65</div></td><td><div id="c65" class="b"></div></td></tr>
+		<tr><td><div class="a">66</div></td><td><div id="c66" class="b"></div></td></tr>
+		<tr><td><div class="a">67</div></td><td><div id="c67" class="b"></div></td></tr>
+		<tr><td><div class="a">68</div></td><td><div id="c68" class="b"></div></td></tr>
+		<tr><td><div class="a">69</div></td><td><div id="c69" class="b"></div></td></tr>
+	</tbody></table>
+	</div>
+
+	<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr><th>#</th><th>Element</th></tr>
+		<tr><td><div class="a">70</div></td><td><div id="c70" class="b"></div></td></tr>
+		<tr><td><div class="a">71</div></td><td><div id="c71" class="b"></div></td></tr>
+		<tr><td><div class="a">72</div></td><td><div id="c72" class="b"></div></td></tr>
+		<tr><td><div class="a">73</div></td><td><div id="c73" class="b"></div></td></tr>
+		<tr><td><div class="a">74</div></td><td><div id="c74" class="b"></div></td></tr>
+		<tr><td><div class="a">75</div></td><td><div id="c75" class="b"></div></td></tr>
+		<tr><td><div class="a">76</div></td><td><div id="c76" class="b"></div></td></tr>
+		<tr><td><div class="a">77</div></td><td><div id="c77" class="b"></div></td></tr>
+		<tr><td><div class="a">78</div></td><td><div id="c78" class="b"></div></td></tr>
+		<tr><td><div class="a">79</div></td><td><div id="c79" class="b"></div></td></tr>
+		<tr><td><div class="a">80</div></td><td><div id="c80" class="b"></div></td></tr>
+		<tr><td><div class="a">81</div></td><td><div id="c81" class="b"></div></td></tr>
+		<tr><td><div class="a">82</div></td><td><div id="c82" class="b"></div></td></tr>
+		<tr><td><div class="a">83</div></td><td><div id="c83" class="b"></div></td></tr>
+		<tr><td><div class="a">84</div></td><td><div id="c84" class="b"></div></td></tr>
+		<tr><td><div class="a">85</div></td><td><div id="c85" class="b"></div></td></tr>
+		<tr><td><div class="a">86</div></td><td><div id="c86" class="b"></div></td></tr>
+		<tr><td><div class="a">87</div></td><td><div id="c87" class="b"></div></td></tr>
+		<tr><td><div class="a">88</div></td><td><div id="c88" class="b"></div></td></tr>
+		<tr><td><div class="a">89</div></td><td><div id="c89" class="b"></div></td></tr>
+		<tr><td><div class="a">90</div></td><td><div id="c90" class="b"></div></td></tr>
+		<tr><td><div class="a">91</div></td><td><div id="c91" class="b"></div></td></tr>
+		<tr><td><div class="a">92</div></td><td><div id="c92" class="b"></div></td></tr>
+	</tbody></table>
+	</div>
+
+	<div class="col">
+	<table cellpadding="0" cellspacing="0">
+		<tbody><tr><th>#</th><th>Element</th></tr>
+		<tr><td><div class="a">93</div></td><td><div id="c93" class="b"></div></td></tr>
+		<tr><td><div class="a">94</div></td><td><div id="c94" class="b"></div></td></tr>
+		<tr><td><div class="a">95</div></td><td><div id="c95" class="b"></div></td></tr>
+		<tr><td><div class="a">96</div></td><td><div id="c96" class="b"></div></td></tr>
+		<tr><td><div class="a">97</div></td><td><div id="c97" class="b"></div></td></tr>
+		<tr><td><div class="a">98</div></td><td><div id="c98" class="b"></div></td></tr>
+		<tr><td><div class="a">99</div></td><td><div id="c99" class="b"></div></td></tr>
+		<tr><td><div class="a">100</div></td><td><div id="c100" class="b"></div></td></tr>
+		<tr><td><div class="a">101</div></td><td><div id="c101" class="b"></div></td></tr>
+		<tr><td><div class="a">102</div></td><td><div id="c102" class="b"></div></td></tr>
+		<tr><td><div class="a">103</div></td><td><div id="c103" class="b"></div></td></tr>
+		<tr><td><div class="a">104</div></td><td><div id="c104" class="b"></div></td></tr>
+		<tr><td><div class="a">105</div></td><td><div id="c105" class="b"></div></td></tr>
+		<tr><td><div class="a">106</div></td><td><div id="c106" class="b"></div></td></tr>
+		<tr><td><div class="a">107</div></td><td><div id="c107" class="b"></div></td></tr>
+		<tr><td><div class="a">108</div></td><td><div id="c108" class="b"></div></td></tr>
+		<tr><td><div class="a">109</div></td><td><div id="c109" class="b"></div></td></tr>
+		<tr><td><div class="a">110</div></td><td><div id="c110" class="b"></div></td></tr>
+		<tr><td><div class="a">111</div></td><td><div id="c111" class="b"></div></td></tr>
+		<tr><td><div class="a">112</div></td><td><div id="c112" class="b"></div></td></tr>
+		<tr><td><div class="a">114</div></td><td><div id="c114" class="b"></div></td></tr>
+		<tr><td><div class="a">116</div></td><td><div id="c116" class="b"></div></td></tr>				
+	</tbody></table>
+	</div>
+</div></div>
+	<div style="clear:both"></div>
+	<div id="stats">
+		<div class="h">Answer Stats</div>
+		<div id="statsInner">
+		</div>
+	</div>
+	<div style="clear:both;"></div><div id="commentsOuter"><div id="commentsHead">102 recent comments</div><div id="showComments">Show &gt;</div><div class="addComment">Add Your Comment &gt;</div><div id="comments"><div class="comment d0" id="comment44865"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/13431">katiclement</a></div><div class="level">(36)</div><div class="text">I typed in "Einsteinium" for a laugh!</div><div class="reply">reply</div><div class="date">Dec 14, 2012</div></div><div class="comment d1" id="comment50218"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/26544">ayad217</a></div><div class="level">(33)</div><div class="text">thats an element
+</div><div class="reply">reply</div><div class="date">Feb 1, 2013</div></div><div class="comment d2" id="comment58014"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/27810">sierraistheshiz</a></div><div class="level">(21)</div><div class="text">I think thats the joke..</div><div class="date">Apr 16, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment44890"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/24777">ChrisTheG815</a></div><div class="level">(24)</div><div class="text">62 I'm glad I'm in Chemistry to learn the Elements! :)</div><div class="reply">reply</div><div class="date">Dec 14, 2012</div></div><div class="comment d0" id="comment46012"><div class="sn">Falcon41</div><div class="level">(34)</div><div class="text">Consistently between 80-90.</div><div class="reply">reply</div><div class="date">Dec 25, 2012</div></div><div class="comment d0" id="comment46610"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/27810">sierraistheshiz</a></div><div class="level">(21)</div><div class="text">Down to all of them with 1:42 left. And all in order. =)</div><div class="reply">reply</div><div class="date">Dec 30, 2012</div></div><div class="comment d0" id="comment47082"><div class="sn">jdtrue</div><div class="level">(57)</div><div class="text">It would be easier if you included the symbols in the chart.</div><div class="reply">reply</div><div class="date">Jan 4, 2013</div></div><div class="comment d1" id="comment47257"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/23069">CBTemple</a></div><div class="level">(62)</div><div class="text">?</div><div class="reply">reply</div><div class="date">Jan 5, 2013</div></div><div class="comment d1" id="comment51348"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/26544">ayad217</a></div><div class="level">(33)</div><div class="text">wth?
+</div><div class="reply">reply</div><div class="date">Feb 12, 2013</div></div><div class="comment d1" id="comment61760"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/40832">NekroNeko</a></div><div class="level">(29)</div><div class="text">Yeah, I could name a lot more with the Chemical symbol, but without, my brain decided to forget even commonly known elements like lead and platinum.</div><div class="reply">reply</div><div class="date">May 15, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment47697"><div class="sn">Falcon41</div><div class="level">(34)</div><div class="text">Cracked 100 (103/114=90%)!</div><div class="reply">reply</div><div class="date">Jan 9, 2013</div></div><div class="comment d0" id="comment48114"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/30947">kalbahamut</a></div><div class="level">(57)</div><div class="text">Never took Chemistry before and got 35. Curium was a total guess, just figured they would have named something after Curie. Then when the answers showed up I felt dumb because I had in fact heard of almost every other one on the chart, except for most with high atomic weights.</div><div class="reply">reply</div><div class="date">Jan 12, 2013</div></div><div class="comment d1" id="comment82277"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/30947">kalbahamut</a></div><div class="level">(57)</div><div class="text">If you add up all the right answers from several separate attempts I get 55. :)</div><div class="reply">reply</div><div class="date">Nov 3, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment48985"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/28436">allure11606</a></div><div class="level">(22)</div><div class="text">wow, i got 94 and i'm in the seventh grade. though i forgot some of the matalloids, i'm pretty good. we'relearning the periodic table of elements in science too. so thats a bonus =)</div><div class="reply">reply</div><div class="date">Jan 20, 2013</div></div><div class="comment d1" id="comment63918"><div class="sn">Maoman</div><div class="level">(14)</div><div class="text">actively learning something makes you much more likely to remember it. Back when I was in chemistry class, I had the first four rows completely memorized, and a good percentage of the rest of it, too. Now, I only got 31 of them. :( I am shame to famiry.</div><div class="reply">reply</div><div class="date">May 30, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment49673"><div class="sn">Falcon41</div><div class="level">(34)</div><div class="text">108</div><div class="reply">reply</div><div class="date">Jan 26, 2013</div></div><div class="comment d0" id="comment50276"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/33014">papergenius5000</a></div><div class="level">(19)</div><div class="text">got them all for the first time!!!!!!!!!!!! 33 seconds left :D</div><div class="reply">reply</div><div class="date">Feb 2, 2013</div></div><div class="comment d0" id="comment50523"><div class="sn">LBWaveDude</div><div class="level">(35)</div><div class="text">All, in order, with 5:25 remaining.</div><div class="reply">reply</div><div class="date">Feb 4, 2013</div></div><div class="comment d1" id="comment113077"><div class="sn">Erikthev</div><div class="level">(53)</div><div class="text">Sad, really sad, that you waste those incredible typing skills doing quizzes. If I could type that fast and accurately, I'd be making serious bucks doing data input for a living.</div><div class="reply">reply</div><div class="date">May 6, 2014</div></div><div class="comment d2" id="comment152233"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/26262">plattitude</a></div><div class="level">(69)</div><div class="text">Sad, really sad, that you think you can make big bucks doing data input for a living.  <br><br>Also, I use quizzes like this, where I know the subject matter cold, to hone my typing speed.  You don't develop a high wpm without practicing, so its hardly wasteful.</div><div class="date">Oct 3, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment50667"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/33427">x277</a></div><div class="level">(21)</div><div class="text">84 on my first try, kind of hard without the symbols there.</div><div class="reply">reply</div><div class="date">Feb 5, 2013</div></div><div class="comment d0" id="comment50728"><div class="sn">lunaticjordan</div><div class="level">(1)</div><div class="text">I remembered these using the song. Thanks Tom Lehrer, also I thought it was spelled "Neodynium" with an N so I missed that one.</div><div class="reply">reply</div><div class="date">Feb 6, 2013</div></div><div class="comment d0" id="comment51243"><div class="sn">Falcon41</div><div class="level">(34)</div><div class="text">114!</div><div class="reply">reply</div><div class="date">Feb 11, 2013</div></div><div class="comment d0" id="comment51679"><div class="sn">Arancaytar</div><div class="level">(18)</div><div class="text">I got Neodymium but forgot *COPPER* and *CALCIUM*?
+
+(and about 60 others, of course)
+
+Heh :-P</div><div class="reply">reply</div><div class="date">Feb 16, 2013</div></div><div class="comment d1" id="comment52486"><div class="sn">Arancaytar</div><div class="level">(18)</div><div class="text">A few days of practice and I can now get them all in the correct order. :D</div><div class="reply">reply</div><div class="date">Feb 23, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment52784"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/33014">papergenius5000</a></div><div class="level">(19)</div><div class="text">I've ALMOST got the order down, just need a bit more practice... :)</div><div class="reply">reply</div><div class="date">Feb 26, 2013</div></div><div class="comment d0" id="comment53621"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/21283">andreitomy</a></div><div class="level">(43)</div><div class="text">All with 7:05 remaining</div><div class="reply">reply</div><div class="date">Mar 5, 2013</div></div><div class="comment d0" id="comment53905"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/33208">dcmitchell</a></div><div class="level">(40)</div><div class="text">Chemical engineering has led me to accidentally memorize the periodic table. Good stuff.</div><div class="reply">reply</div><div class="date">Mar 7, 2013</div></div><div class="comment d0" id="comment57941"><div class="sn">tanakaseiron</div><div class="level">(14)</div><div class="text">I always get stuck after 95.</div><div class="reply">reply</div><div class="date">Apr 15, 2013</div></div><div class="comment d0" id="comment59754"><div class="sn">tanakaseiron</div><div class="level">(14)</div><div class="text">Can't get past 99.</div><div class="reply">reply</div><div class="date">Apr 30, 2013</div></div><div class="comment d0" id="comment61152"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/10371">calebthemathman</a></div><div class="level">(28)</div><div class="text">Haven't seen chemistry in 14 years, so, I'll take my 72 with a smile...</div><div class="reply">reply</div><div class="date">May 10, 2013</div></div><div class="comment d0" id="comment62282"><div class="sn">DollarBill2208</div><div class="level">(72)</div><div class="text">I found that learning all of the elements in order is the easiest way to go.  Reason being is that most people have at least a vague idea of what the table is supposed to look like, and where certain elements should go, so all you have to do is fill in the holes with the ones you are less familiar with.  I have been able to retain the knowledge with very little maintenance as well.  I tried to learn them in alphabetical order, or elements by first letter, but I found that to be more difficult.  I hope this helps.  The test is fine the way it is.  No need to give us symbols.  Learn the elements in order, and challenge yourself.  :)</div><div class="reply">reply</div><div class="date">May 19, 2013</div></div><div class="comment d1" id="comment70959"><div class="sn">OrganicDude</div><div class="level">(22)</div><div class="text">Great advice, acer9199, thank you!</div><div class="reply">reply</div><div class="date">Jul 22, 2013</div></div><div class="cmsp"></div><div class="comment d0" id="comment65836"><div class="sn">joerock14</div><div class="level">(46)</div><div class="text">I got Samarium... and forgot Iron!
+51 for a guy with a poly sci degree, not too bad.</div><div class="reply">reply</div><div class="date">Jun 13, 2013</div></div><div class="comment d0" id="comment67456"><div class="sn">gkachurin</div><div class="level">(12)</div><div class="text">112/114... Forgot Darmstadtium and Roentgenium.
+
+Also, can you please make some of the elements with harder spelling have additional accepted answers. I spent maybe a full minute fuming at my computer when it wouldn't accept "Praesodymium," "Prasedymium," "Praseodemium..."</div><div class="reply">reply</div><div class="date">Jun 25, 2013</div></div><div class="comment d0" id="comment69049"><div class="sn">Arachnid98</div><div class="level">(11)</div><div class="text">Crap, they gave those last few actual names now! I thought for sure their "unununium" placeholder names would work...</div><div class="reply">reply</div><div class="date">Jul 8, 2013</div></div><div class="comment d0" id="comment69542"><div class="sn">uwilllose</div><div class="level">(2)</div><div class="text">how useful is memorizing these elements? wonder how beneficial would it be to know them all...anyways I luv this quiz My favorite !!!!
+
+I would really appreciate it if same quiz  would be invented except for the elements names, we could enter their symbols!!
+
+thank you for this awesome periodic table quiz...</div><div class="reply">reply</div><div class="date">Jul 11, 2013</div></div><div class="comment d0" id="comment70058"><div class="sn">aliberti68</div><div class="level">(40)</div><div class="text">Managed 60, but missed some obvious ones.  </div><div class="reply">reply</div><div class="date">Jul 15, 2013</div></div><div class="comment d1" id="comment99949"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/58349">yoyocoolbs2</a></div><div class="level">(6)</div><div class="text">ferrum is not an element fe is iron</div><div class="reply">reply</div><div class="date">Mar 12, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment72808"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/44133">enskai</a></div><div class="level">(24)</div><div class="text">Please accept Ferrum for Fe.</div><div class="reply">reply</div><div class="date">Aug 6, 2013</div></div><div class="comment d1" id="comment95676"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/45782">ConnorIsBoss</a></div><div class="level">(13)</div><div class="text">Fe is iron
+</div><div class="reply">reply</div><div class="date">Feb 14, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment75756"><div class="sn">vwang</div><div class="level">(5)</div><div class="text">Awesome quiz! 100% with 5:44 remaining! </div><div class="reply">reply</div><div class="date">Sep 1, 2013</div></div><div class="comment d0" id="comment75882"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/24692">LegendBlackKyurem</a></div><div class="level">(30)</div><div class="text">All of them in order with 6 min 23 seconds, love this quiz :P</div><div class="reply">reply</div><div class="date">Sep 3, 2013</div></div><div class="comment d0" id="comment77898"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/50794">eliaz55</a></div><div class="level">(22)</div><div class="text">40%, I could've done better considering I am quite interested in the periodic table. Forgot magnesium but got dysprosium and Roentgenium... XD</div><div class="reply">reply</div><div class="date">Sep 22, 2013</div></div><div class="comment d0" id="comment80506"><div class="sn">Scorpiocentauri</div><div class="level">(6)</div><div class="text">All of them in order with 5:26 remaining, first try. Much joy.</div><div class="reply">reply</div><div class="date">Oct 19, 2013</div></div><div class="comment d0" id="comment81109"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/53886">rdomad</a></div><div class="level">(9)</div><div class="text">100% with 5:36 remaining.</div><div class="reply">reply</div><div class="date">Oct 23, 2013</div></div><div class="comment d0" id="comment81219"><div class="sn">QwizKid</div><div class="level">(15)</div><div class="text">I like 'The New Periodic Table Song' by ASAP science, its on YouTube and even Spotify and iTunes</div><div class="reply">reply</div><div class="date">Oct 24, 2013</div></div><div class="comment d1" id="comment97226"><div class="sn">quizzer123</div><div class="level">(14)</div><div class="text">Yeah,the only bit I am rubbish is the fast bit xD</div><div class="reply">reply</div><div class="date">Feb 24, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment83190"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/54906">Lillyrose333</a></div><div class="level">(22)</div><div class="text">I got 73. It wasn't that hard</div><div class="reply">reply</div><div class="date">Nov 10, 2013</div></div><div class="comment d0" id="comment87618"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/60276">AstronomerGuy</a></div><div class="level">(9)</div><div class="text">Hmmm I didn't manage to get them all in because I kept making spelling errors...</div><div class="reply">reply</div><div class="date">Dec 15, 2013</div></div><div class="comment d0" id="comment89424"><div class="sn">wordgirl</div><div class="level">(24)</div><div class="text">Got 41, would have had 47 if I'd spelled those six correctly, and I cannot say how proud I am of myself.  I'm sitting here astonished because I thought I remembered ZERO% of the periodic table.  It's amazing how your brain retains stuff.  </div><div class="reply">reply</div><div class="date">Dec 31, 2013</div></div><div class="comment d0" id="comment90160"><div class="sn">BigTitanicFan001sBrother</div><div class="level">(6)</div><div class="text">I got 58, 51% of them, I gotta get back to a Chemistry class room.</div><div class="reply">reply</div><div class="date">Jan 6, 2014</div></div><div class="comment d0" id="comment94907"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/43062">Edwin95</a></div><div class="level">(33)</div><div class="text">full marks with one minute to go</div><div class="reply">reply</div><div class="date">Feb 9, 2014</div></div><div class="comment d0" id="comment95824"><div class="sn">Arancaytar</div><div class="level">(18)</div><div class="text">*chokes* Can't believe I missed Oxygen.</div><div class="reply">reply</div><div class="date">Feb 15, 2014</div></div><div class="comment d1" id="comment95939"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/66874">Flerovium</a></div><div class="level">(7)</div><div class="text">I only got 71. :(</div><div class="reply">reply</div><div class="date">Feb 16, 2014</div></div><div class="comment d2" id="comment97228"><div class="sn">quizzer123</div><div class="level">(14)</div><div class="text">Did you happen to get Flerovium?</div><div class="date">Feb 24, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment96465"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/46411">Iustitia39</a></div><div class="level">(41)</div><div class="text">Great quiz but Ununpentium, Ununtrium, Ununoctium and Ununseptium are not shown.</div><div class="reply">reply</div><div class="date">Feb 19, 2014</div></div><div class="comment d1" id="comment118350"><div class="owner"><div class="sn">Quizmaster</div></div><div class="text">This is by choice.  When they get names, I'll add them.</div><div class="reply">reply</div><div class="date">May 22, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment97791"><div class="sn">ShrinkyNutz</div><div class="level">(19)</div><div class="text">Got 106/114 and I haven't started school yet. Some say I have a certain gift for matters of intellect and the scientific world.. Much like one has common sense, it is the sense of knowledge that comes to me naturally. I type this as I suckle on my mother's teet</div><div class="reply">reply</div><div class="date">Feb 27, 2014</div></div><div class="comment d0" id="comment98613"><div class="sn">mattvw9287</div><div class="level">(29)</div><div class="text">I got 50. I don't memorize them, that's what the chart is for... lol</div><div class="reply">reply</div><div class="date">Mar 4, 2014</div></div><div class="comment d0" id="comment99133"><div class="sn">enyomosia</div><div class="level">(19)</div><div class="text">Finally got all of them with 2:46 left. Would be nice if it were updated to add the new 4 elements though</div><div class="reply">reply</div><div class="date">Mar 7, 2014</div></div><div class="comment d0" id="comment99372"><div class="sn">Arancaytar</div><div class="level">(18)</div><div class="text">FInally down to 7:01 remaining :D</div><div class="reply">reply</div><div class="date">Mar 8, 2014</div></div><div class="comment d0" id="comment103296"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/27491">ISOQuorra</a></div><div class="level">(13)</div><div class="text">all 114 with 5:07 left. i want to know if anyone can beat that!</div><div class="reply">reply</div><div class="date">Mar 31, 2014</div></div><div class="comment d0" id="comment106145"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/78358">lilch</a></div><div class="level">(6)</div><div class="text">If I could spell, then I would have gotten an additional five or so.</div><div class="reply">reply</div><div class="date">Apr 13, 2014</div></div><div class="comment d0" id="comment108192"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/91117">rawe</a></div><div class="level">(35)</div><div class="text">Was hard in English!</div><div class="reply">reply</div><div class="date">Apr 21, 2014</div></div><div class="comment d0" id="comment109009"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/74014">cedric</a></div><div class="level">(38)</div><div class="text">Misses Gold, gets Roentgenium, what is my life -.-</div><div class="reply">reply</div><div class="date">Apr 23, 2014</div></div><div class="comment d0" id="comment109144"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/87799">Instrumental</a></div><div class="level">(21)</div><div class="text">Finally got them all! \:D/</div><div class="reply">reply</div><div class="date">Apr 24, 2014</div></div><div class="comment d0" id="comment110076"><div class="sn">alanakahili316</div><div class="level">(12)</div><div class="text">I knew memorizing this dang thing would come in handy some day... or not.</div><div class="reply">reply</div><div class="date">Apr 27, 2014</div></div><div class="comment d0" id="comment110394"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/98442">SpankyMcFabulous</a></div><div class="level">(35)</div><div class="text">Anybody else try rattling off the Tom Lehrer song?</div><div class="reply">reply</div><div class="date">Apr 28, 2014</div></div><div class="comment d1" id="comment111359"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/84817">summerv68</a></div><div class="level">(44)</div><div class="text">Yes....It was the only reason I got 42.</div><div class="reply">reply</div><div class="date">May 1, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment111668"><div class="sn">DeepaParida</div><div class="level">(1)</div><div class="text">Flerovium</div><div class="reply">reply</div><div class="date">May 2, 2014</div></div><div class="comment d0" id="comment115318"><div class="sn">snix</div><div class="level">(44)</div><div class="text">I got them all with more time on the clock than when I started.</div><div class="reply">reply</div><div class="date">May 13, 2014</div></div><div class="comment d1" id="comment115320"><div class="sn">snix</div><div class="level">(44)</div><div class="text">I also had some extra ones that haven't been discovered yet.</div><div class="reply">reply</div><div class="date">May 13, 2014</div></div><div class="comment d2" id="comment115321"><div class="sn">snix</div><div class="level">(44)</div><div class="text">Woulda been faster but I misspelled "molybdenum" on the first try.</div><div class="date">May 13, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment120816"><div class="sn">GiaHuy</div><div class="level">(14)</div><div class="text">99/114</div><div class="reply">reply</div><div class="date">May 30, 2014</div></div><div class="comment d0" id="comment122179"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/25526">Zefyrinus</a></div><div class="level">(43)</div><div class="text">One needs to think of places and known scientists to get several of these.</div><div class="reply">reply</div><div class="date">Jun 4, 2014</div></div><div class="comment d0" id="comment123502"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">94/114 now 15 1/2 yrs old
+
+
+
+
+
+by the way I'm strong in Chem</div><div class="reply">reply</div><div class="date">Jun 9, 2014</div></div><div class="comment d0" id="comment123602"><div class="sn">flutterbyamy</div><div class="level">(14)</div><div class="text">29 and I am a chemist ... embarrassing!</div><div class="reply">reply</div><div class="date">Jun 9, 2014</div></div><div class="comment d0" id="comment124185"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">finally got to 112, being a 15.5-yrs-old student strong in chemistry. Missing Darmstadium (110) and Copernicium (112).</div><div class="reply">reply</div><div class="date">Jun 11, 2014</div></div><div class="comment d1" id="comment124187"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">Should be "Darmstadtium", not "Darmstadium"</div><div class="reply">reply</div><div class="date">Jun 11, 2014</div></div><div class="comment d1" id="comment124188"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">Now 113/114. Missing Dubnium.</div><div class="reply">reply</div><div class="date">Jun 11, 2014</div></div><div class="comment d2" id="comment124190"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">HaHa. 114/114. Never give up, and you can do it!</div><div class="date">Jun 11, 2014</div></div><div class="comment d2" id="comment124191"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">With 1:43 left when I got all 114.</div><div class="date">Jun 11, 2014</div></div><div class="comment d2" id="comment124510"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">Today I can get all 114 with 1:45 left... An improvement of 2 seconds... Could be faster!</div><div class="date">Jun 12, 2014</div></div><div class="comment d2" id="comment161394"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/109655">TGCML</a></div><div class="level">(12)</div><div class="text">Long time since I've did it, and yet 2:03 left with all down.
+Thanks to Tom Lehrer for speeding me up. It's much easier to memorise with a song than to simply recite them in order. 
+Those after 102 (Nobelium) are simply harder. I've heard of 5 of those people only.</div><div class="date">Nov 10, 2014</div></div><div class="cmsp"></div><div class="comment d0" id="comment125273"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/105705">mightythor</a></div><div class="level">(39)</div><div class="text">I want to discover an element so I can name it yourmomium.</div><div class="reply">reply</div><div class="date">Jun 15, 2014</div></div><div class="comment d0" id="comment125572"><div class="sn">Kiers</div><div class="level">(7)</div><div class="text">100% correct with 4:04 to spare !!
+
+I should get out more shouldn't I ?! - I had the urge to learn the periodic table 3 days ago and now I have succeeded.
+
+What could I do with this useful information ?</div><div class="reply">reply</div><div class="date">Jun 16, 2014</div></div><div class="comment d0" id="comment128191"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/107531">smartcookie17</a></div><div class="level">(51)</div><div class="text">All with 3:34 left!</div><div class="reply">reply</div><div class="date">Jun 25, 2014</div></div><div class="comment d0" id="comment129644"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/90603">Frankthetriviaman</a></div><div class="level">(32)</div><div class="text">Took a few tries, but finally got 100%
+
+Probably a good thing my major at college is very chemistry oriented; otherwise I wouldn't have heard of most of these!</div><div class="reply">reply</div><div class="date">Jul 1, 2014</div></div><div class="comment d0" id="comment130738"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/42995">Seals</a></div><div class="level">(43)</div><div class="text">13 correct. I shocked myself that I got over seven.</div><div class="reply">reply</div><div class="date">Jul 6, 2014</div></div><div class="comment d0" id="comment131484"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/37293">Moosefight</a></div><div class="level">(56)</div><div class="text">As we add more, it seems that Scientist+ium is a pretty good way to go.</div><div class="reply">reply</div><div class="date">Jul 8, 2014</div></div><div class="comment d0" id="comment131506"><div class="sn">Greenmaan</div><div class="level">(5)</div><div class="text">Right... gold.
+I can remember Ytterbium, but not gold...</div><div class="reply">reply</div><div class="date">Jul 8, 2014</div></div><div class="comment d0" id="comment134036"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/5367">tschutzer</a></div><div class="level">(68)</div><div class="text">The symbol for Bismuth is incorrect.  The second letter should be a lower case i, not an upper case one (or a lower case L, as the case may be).</div><div class="reply">reply</div><div class="date">Jul 19, 2014</div></div><div class="comment d0" id="comment138976"><div class="sn">decadejourney</div><div class="level">(14)</div><div class="text">116/116 and I'm 28</div><div class="reply">reply</div><div class="date">Aug 7, 2014</div></div><div class="comment d0" id="comment142421"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/111472">BreMag121</a></div><div class="level">(11)</div><div class="text">24 and just got an A in chemistry at GSCE...</div><div class="reply">reply</div><div class="date">Aug 22, 2014</div></div><div class="comment d0" id="comment144745"><div class="sn">Page1Read</div><div class="level">(4)</div><div class="text">Whoo Whoo . Finally made 100% . Good to have a memory . Buzzin ! Will practice every day so I do not forget them . Vey happy with myself today.</div><div class="reply">reply</div><div class="date">Sep 1, 2014</div></div><div class="comment d0" id="comment152072"><div class="sn">racheal</div><div class="level">(2)</div><div class="text">yay!!!!!!!!!!!! racheal got 84/114</div><div class="reply">reply</div><div class="date">Oct 2, 2014</div></div><div class="comment d0" id="comment154482"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/106199">James2</a></div><div class="level">(23)</div><div class="text">I was desperate enough to start adding "ium" to random places names by the end</div><div class="reply">reply</div><div class="date">Oct 13, 2014</div></div><div class="comment d0" id="comment156000"><div class="sn">racheal</div><div class="level">(2)</div><div class="text">hooray i did 105 elements so close!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! by 8 years old racheal</div><div class="reply">reply</div><div class="date">Oct 20, 2014</div></div><div class="comment d0" id="comment157925"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/104388">Kaneel</a></div><div class="level">(44)</div><div class="text">Tough quiz. Haven't had Chem classes in 10 years.</div><div class="reply">reply</div><div class="date">Oct 28, 2014</div></div><div class="comment d0" id="comment159010"><div class="sn"><a href="http://www.jetpunk.com/user-quizzes/124942">walkingwithelephants</a></div><div class="level">(5)</div><div class="text">I know them all but the spelling......</div><div class="reply">reply</div><div class="date">Nov 1, 2014</div></div><div class="comment d0" id="comment160796"><div class="sn">samisnice111</div><div class="level">(20)</div><div class="text">Awesome. Although, I am a bit confused as to why it accepts wolfram for tungsten but not some of the Latin names, like cuprum, aurum, plumbum.</div><div class="reply">reply</div><div class="date">Nov 7, 2014</div></div><div style="margin: 25px 0 0 0"><div id="showAllComments">Show All Comments &gt;</div><div class="addComment">Add Your Comment &gt;</div></div></div></div> <!-- end comments --></div> <!-- end comments outer --></div><div id="col2">	<div id="adBigBox">
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0994084661919749";
+		/* jetpunk-bigbox */
+		google_ad_slot = "2782774241";
+		google_ad_width = 300;
+		google_ad_height = 250;
+		//-->
+		</script>
+		<script type="text/javascript" src="./Periodic Table Quiz_files/show_ads.js">
+		</script><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins>	
+	</div>
+<div id="hotQuizzes" class="subdiv"><div class="h"><div class="h1">New and Popular Quizzes</div><div class="h2"><select id="selHotLanguage"><option value="english">en</option><option value="french">fr</option></select></div></div><div class="b" style="display: block;"><div class="line"><div class="x">1049</div><div class="y"><a href="http://www.jetpunk.com/quizzes/map-quiz-us-states.php">United States Map Quiz</a></div></div><div class="line"><div class="x">796</div><div class="y"><a href="http://www.jetpunk.com/user-quizzes/97243/countries-with-wild-tigers">Countries with Wild Tigers</a></div></div><div class="line"><div class="x">711</div><div class="y"><a href="http://www.jetpunk.com/quizzes/how-many-countries-can-you-name.php">Countries of the World</a></div></div><div class="line"><div class="x">374</div><div class="y"><a href="http://www.jetpunk.com/quizzes/movie-titles-by-clue">Movie Titles by Clue</a></div></div><div class="line"><div class="x">271</div><div class="y"><a href="http://www.jetpunk.com/quizzes/how-many-states-can-you-name.php">US States</a></div></div><div class="line"><div class="x">198</div><div class="y"><a href="http://www.jetpunk.com/quizzes/axis-occupied-countries-of-wwii">Axis-Occupied Countries of WWII</a></div></div><div class="line"><div class="x">95</div><div class="y"><a href="http://www.jetpunk.com/quizzes/british-spellings-quiz.php">British Spellings</a></div></div><div class="line"><div class="x">69</div><div class="y"><a href="http://www.jetpunk.com/quizzes/heaviest-drinking-countries-quiz.php">Heaviest Drinking Countries</a></div></div><div class="line"><div class="x">62</div><div class="y"><a href="http://www.jetpunk.com/quizzes/tv-taglines-quiz">American TV Taglines</a></div></div><div class="line"><div class="x">55</div><div class="y"><a href="http://www.jetpunk.com/quizzes/songs-by-synopsis-2">Songs by Synopsis #2</a></div></div><div class="line"><div class="x">43</div><div class="y"><a href="http://www.jetpunk.com/quizzes/landmarks-quiz-3.php">Landmarks Picture Quiz #3</a></div></div><div class="line"><div class="x">42</div><div class="y"><a href="http://www.jetpunk.com/quizzes/biggest-cities-in-france-quiz.php">Biggest Cities in France</a></div></div><div class="line"><div class="x">39</div><div class="y"><a href="http://www.jetpunk.com/quizzes/groups-of-five-quiz-2.php">Groups of Five #2</a></div></div><div class="line"><div class="x">28</div><div class="y"><a href="http://www.jetpunk.com/quizzes/name-baseball-mvps.php">Baseball MVP's</a></div></div><div class="line"><div class="x">14</div><div class="y"><a href="http://www.jetpunk.com/quizzes/name-cy-young-winners.php">Cy Young Winners</a></div></div><div class="line"><div class="x">?</div><div class="y"><a href="http://www.jetpunk.com/quizzes/random.php?language=english">Random</a></div></div></div></div>			<div id="tags" class="subdiv">
+				<div class="a">Similar Quizzes by Tag</div>
+				<div class="b"><a href="http://www.jetpunk.com/tags/misc-topic">Misc Topic</a> &gt; <a href="http://www.jetpunk.com/tags/chemistry.php">Chemistry</a></div>
+			</div>
+	</div>			</div>
+			<div id="push"></div> <!-- necessary to put footer at bottom -->
+        
+        <div id="footer">
+			JetPunk.com is copyright H Brothers Inc, 2014. :)<br>
+			<a rel="nofollow" href="http://www.jetpunk.com/contact.php">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.jetpunk.com/about.php">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.jetpunk.com/popular-quiz-categories.php">Popular Quiz Categories</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.jetpunk.com/user-quizzes/">User-Created Quizzes</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.jetpunk.com/tags/index">Quizzes by Tag</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.jetpunk.com/privacy.php">Privacy Policy</a>
+			<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-23348460-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+			</script>
+		</div>
+
+		<div id="overlay">
+				<div id="loginWindow">
+		<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+		<div class="tabContainer">
+			<div class="tabs">
+				<table cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td valign="bottom"><div id="loginTab1" class="tab selTab">Log In</div></td>
+						<td valign="bottom"><div id="loginTab2" class="tab">Create Account</div></td>
+						<td valign="bottom"><div id="loginTab3" class="tab">Forgot Password</div></td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div class="loader"><img src="./Periodic Table Quiz_files/ajax-loader2.gif" alt="ajax loader 2"></div>
+			
+			<div class="tabContent" id="loginTabContent1" style="display: block;">
+				<div class="a">Login to JetPunk.com</div>
+				<div class="b">Screen Name or E-mail Address:</div>
+				<div><input type="text" id="loginUser" class="x"></div>
+				<div class="b">Password:</div>
+				<div><input type="password" id="loginPass" class="x"></div>
+				<div class="c">
+					<input type="button" id="btnLogin" value="Login" class="y">
+				</div>
+				<div class="d">
+						<input type="checkbox" id="loginRemember" checked=""> Remember me on this computer
+					</div>
+			</div>
+			<div class="tabContent" id="loginTabContent2">
+				<div class="a">Create Account</div>
+				<div class="b">E-mail Address: (must be real)</div>
+				<div><input type="text" id="createEmail" class="x"></div>
+				<div class="b">Screen Name: (letters and numbers only)</div>
+				<div><input type="text" id="createScreen" class="x"></div>
+				<div class="b">Password:</div>
+				<div><input type="password" id="createPass1" class="x"></div>
+				<div class="b">Retype Password:</div>
+				<div><input type="password" id="createPass2" class="x"></div>
+				<div class="c"><input type="button" id="btnCreate" value="Create Account" class="y"></div>
+				<div class="d">
+					<input type="checkbox" id="createCheck1" checked=""> E-mail me occasional Quiz Updates<br>
+				</div>
+				<div class="e">
+					* We will never sell or share your e-mail address!
+				</div>
+			</div>
+			<div class="tabContent" id="loginTabContent3">
+				<div class="a">Forgotten Password</div>
+				<div class="f">We will send you an e-mail with a link to reset your password.</div>
+				<div class="b">E-mail Address:</div>
+				<div><input type="text" id="resetEmail" class="x"></div>
+				<div class="c"><input type="button" value="Reset Password" class="y" id="btnReset"></div>
+			</div>
+		</div>
+	</div>
+		<div id="commentBox">
+			<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close" onclick="_overlay.hide()"></div>
+			<div class="h">Post Your Comment</div>
+			<div class="i">All Comments Moderated</div>
+			<textarea id="txtComment" onkeydown="commentTyping()"></textarea>
+			<div id="commentChars"></div>
+			<input type="button" id="btnSubmitComment" value="Submit Comment">
+			<div class="loader"><img src="./Periodic Table Quiz_files/ajax-loader2.gif" alt="ajax loader 2"></div>
+		</div>
+		<div id="activeHelp" class="help">
+		<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+		<div class="help1">How to Answer</div>
+		<ul>
+			<li>Enter answers in the area marked "Enter element's name here:".</li>
+			<li><b>Your answer should correspond to the highlighted yellow box.</b></li>
+			<li>Click a box to highlight it.</li>
+			<li>You can also use the UP, DOWN, and TAB keys to change which box is highlighted.</li>
+		</ul>
+	</div>
+
+			<div id="newLevel">
+			<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+			<div class="a">Congrats!</div>
+			<div class="b">Your performance on this quiz has boosted you to a<br>new level on JetPunk! You are now at:</div>
+			<div class="c"></div>
+			<div class="d">To save this level, you'll have to <a href="javascript:void(0)" onclick="_loginWindow.launch(2,null);">Create an Account</a></div>
+			<div class="e">Questions? <a target="blank" href="http://www.jetpunk.com/explain-points">Points explained</a></div>
+		</div>
+		<div id="messageBox">
+			<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+			<div class="message"></div>
+		</div>
+	<div id="divImageAttrib"><div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>Image credit Emichan; Miraceti <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution ShareAlike 3.0 license</a></div>
+	<div id="normalHelp" class="help">
+		<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+		<div class="help1">How to Answer</div>
+		<ul>
+			<li>Enter answers in the area marked "Enter element's name here:".</li>
+			<li>You can enter any answer, at any time - they don't have to be in order.</li>
+		</ul>
+	</div>
+
+	<div id="bigImageBox">
+		<div id="bibClose"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+		<div id="bibImage"></div>
+		<div id="bibAttrib"></div>
+	</div>
+
+	<div id="divSubscribe">
+		<div class="close"><img src="./Periodic Table Quiz_files/x.png" alt="close"></div>
+		<div class="h">Subscribe to Quizzes by </div>
+		<div class="b">Get an e-mail when this user creates a new quiz</div>
+		<input id="btnSubscribe" type="button" value="Subscribe">
+	</div>
+			<div id="loading">
+			Loading<br>Results<div><img src="./Periodic Table Quiz_files/ajax-loader.gif" alt="ajax loading"></div>
+		</div>
+			</div>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","licenseKey":"73ac2a616f","applicationID":"2912669","transactionName":"bgNVYkBVWhVZVU1eCldJYkRbG0QOSBldXhZJClZPH0VBD0IYSV8V","queueTime":0,"applicationTime":5,"atts":"QkRWFAhPSRs=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script>
+
+
+
+<!-- cached on 11:51 AM, November 10, 2014--><script src="./Periodic Table Quiz_files/nr-476.min.js"></script><script type="text/javascript" src="./Periodic Table Quiz_files/73ac2a616f"></script></body></html>
